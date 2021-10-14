@@ -12,4 +12,22 @@
         color: #FFFFFF;
         margin-bottom: 0px;
     }
+    &_catalog{
+        margin-bottom: 46px;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 45px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #0D0D0D;
+    }
+    &_reviews{
+        transform:translateX(5%);
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #0D0D0D; 
+    }
 }

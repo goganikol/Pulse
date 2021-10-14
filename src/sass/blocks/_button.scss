@@ -30,4 +30,17 @@
         text-transform: uppercase;
         color: #FFFFFF;
     }
+    &_mini{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 135px;
+        height: 44px;
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-top: 17px;
+    }
 }
