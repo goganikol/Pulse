@@ -5,10 +5,14 @@
     input{
         height:50px;
         border-radius:5px;
+        border: none;
         margin-top: 12px;
         padding: 0px 21px;
     }
     &_consultation{
         margin-top: 36px;
+    }
+    &_modal{
+        margin: 25px auto;
     }
 }

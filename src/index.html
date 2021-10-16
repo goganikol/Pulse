@@ -23,7 +23,7 @@
                 </div>
                 <div class="header__contacts">
                     <a href="+74999228974" class="phone_number">+7 (499) 922-89-74</a>
-                    <button class="button">заказать звонок</button>
+                    <button data-modal="consultation" class="button">заказать звонок</button>
                 </div>
             </header>
 
@@ -46,7 +46,7 @@
                     </div>
                 </div>
 
-                <button class="button button__main">заказать кОНСУЛЬТАЦИЮ</button>
+                <button data-modal="consultation" class="button button__main">заказать кОНСУЛЬТАЦИЮ</button>
                 <div class="promo__link">
                     или
                     <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a> 
@@ -245,7 +245,7 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                            <div class="catalog-item__subtitle">Пульсометр Suunto M2</div>
                             <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
                             <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
@@ -278,7 +278,7 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                            <div class="catalog-item__subtitle">Пульсометр Polar FT4</div>
                             <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
                             <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
@@ -352,6 +352,59 @@
             </div>
         </div>
     </section>
+
+    <footer class='footer'>
+        <div class="footer_map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1987.795130528658!2d37.64377177554882!3d55.769390871550016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNzA3OA!5e0!3m2!1sru!2sua!4v1634306537868!5m2!1sru!2sua" width="100%" height="630px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="footer_info">
+            <address class="footer_info_addr">Москва, Мясницкий проезд, д.3с1</address>
+            <a href="tel:+84999228974" class="footer_info__tel">8 (499)922-89-74</a>
+            <div class="footer_info__socials">
+                <a href="#" class="social">
+                    <img src="./icons/instagram.svg" alt="instagram" class="social_icon">
+                </a>
+                <a href="#" class="social">
+                    <img src="./icons/facebook.svg" alt="facebook" class="social_icon">
+                </a>
+                <a href="#" class="social">
+                    <img src="./icons/pinterest.svg" alt="pinterest" class="social_icon">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal_close">&times;</div>
+            <h1 class="modal_subheader">Просто заполните форму заявки</h1>
+            <div class="modal_descr">и мы перезвоним вам в течении 10 минут</div>
+            <form action="#" class=" form form_consultation form_modal">
+                <input type="text" required placeholder="Ваше имя">
+                <input type="tel" required placeholder="Ваш телефон" >
+                <input type="email" required placeholder="Ваш E-mail">
+                <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
+            </form>
+        </div>
+
+        <div class="modal" id="order">
+            <div class="modal_close">&times;</div>
+            <h1 class="modal_subheader">Ваш заказ:</h1>
+            <div class="modal_descr"></div>
+            <form action="#" class=" form form_consultation form_modal">
+                <input type="text" required placeholder="Ваше имя">
+                <input type="tel" required placeholder="Ваш телефон" >
+                <input type="email" required placeholder="Ваш E-mail">
+                <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
+            </form>
+        </div>
+
+        <div class="modal" id="thanks">
+            <div class="modal_close">&times;</div>
+            <h1 class="modal_subheader">Спасибо за вашу заявку!</h1>
+            <div class="modal_descr">Наш менеджер свяжется с вами в ближайшее время!</div>
+        </div>
+    </div>
 
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
